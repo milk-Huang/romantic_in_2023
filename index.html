@@ -8,6 +8,8 @@
     <title>《致亲爱的小何》</title>
 
     <link type="text/css" rel="stylesheet" href="./static/default.css">
+    <!-- 新增看板娘 -->
+    <script src="./autoload.js"></script>
 
     <script type="text/javascript" src="./static/jquery.min.js"></script>
 
@@ -29,8 +31,16 @@
 
     <style type="text/css">
         <!--
+        .article {
+            color: #3070f9
+        }
+
         .STYLE1 {
             color: #666666
+        }
+
+        .STYLE2 {
+            color: yellowgreen
         }
         -->
 
@@ -39,7 +49,7 @@
 </head>
 
 <body>
-
+    /* 新增媒体音乐 */
     <audio autoplay="autopaly">
 
         <source src="renxi.mp3" type="audio/mp3" />
@@ -58,7 +68,7 @@
 
                 <div id="code">
 
-                    <font color="#FF0000">
+                    <font color="article">
                         <span class="say">我的心中充满了爱，</span><br>
                         <span class="say">对你的情感无限真诚。</span><br>
                         <span class="say">我希望你能感受到，</span><br>
@@ -87,7 +97,7 @@
             <div id="clock-box">
 
                 <span class="STYLE1"></span>
-                <font color="#33CC00">亲爱的小何，我喜欢你</font>
+                <font color="STYLE2">亲爱的小何，我喜欢你</font>
 
                 <span class="STYLE1">已经是……</span>
 
@@ -367,7 +377,7 @@
 
             var textAnimate = eval(Jscex.compile("async", function () {
                 var together = new Date();
-                together.setFullYear(2022, 11, 23); //时间年月日
+                together.setFullYear(2022, 12, 11); //时间年月日
                 together.setHours(16); //小时	
                 together.setMinutes(53); //分钟
                 together.setSeconds(0); //秒前一位
